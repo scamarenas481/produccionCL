@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Ejemplo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .table-responsive {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla de Ejemplo</h1>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ClaveID</th>
+                        <th>Descripción</th>
+                        <th>Línea</th>
+                        <th>Existencias</th>
+                        <th>Unidad de entrada</th>
+                        <th>Factor entre unidades</th>
+                        <th>Clave SAT</th>
+                        <th>Clave unidad</th>
+                        <th>Código del proveedor</th>
+                        <th>Proveedor</th>
+                        <th>Clave alterna</th>
+                        <th>PARA REVISION</th>
+                        <th>PARA REESTRUCTURA</th>
+                        <th>fecha mov</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php include 'mostrar_datos.php'; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
